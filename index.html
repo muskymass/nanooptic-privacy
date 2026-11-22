@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NanoOptic privacy policy</title>
+<style>
+  :root { color-scheme: light dark; --bg:#fff; --fg:#1b1b1f; --muted:#5b5b66; --line:#d8d8e0; --accent:#0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121214; --fg:#e6e6ea; --muted:#a0a0ab; --line:#33343a; --accent:#8ab4f8; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.8rem; margin:.4em 0 .2em; }
+  h2 { font-size:1.2rem; margin:1.8em 0 .5em; }
+  p.meta { color:var(--muted); margin-top:0; }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; font-size:.94rem; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:start; vertical-align:top; }
+  th { background:color-mix(in srgb, var(--line) 40%, transparent); }
+  @media (max-width:560px) { table, thead, tbody, tr, th, td { display:block; } thead { display:none; } td { border-top:0; } tr { border-top:1px solid var(--line); margin-bottom:10px; } td::before { content:attr(data-label) ": "; font-weight:600; } }
+</style>
+</head>
+<body>
+<main>
+<h1>NanoOptic privacy policy</h1>
+<p class="meta">Last updated: 21 November 2026</p>
+
+<p>NanoOptic is a camera app. It has no account, no ads and no servers of its own, and it does not sell or share your data. Your photos, videos and audio are saved on your phone and go nowhere unless you share them.</p>
+
+<h2>What NanoOptic reads and why</h2>
+<table>
+<thead><tr><th>Data</th><th>Why</th><th>Where it goes</th></tr></thead>
+<tbody>
+<tr><td data-label="Data">Camera and microphone</td><td data-label="Why">To take photos and record video and sound.</td><td data-label="Where it goes">Saved on your phone only. While a recording runs, a notification stays visible until it stops.</td></tr>
+<tr><td data-label="Data">Location (optional)</td><td data-label="Why">Only when "Geotag" or "Sky overlay" is on: to write the position into your own files and to work out where the sun and moon are. Asked for when you switch it on.</td><td data-label="Where it goes">Written into your own photo and video files; used on the phone. Never sent anywhere by NanoOptic.</td></tr>
+<tr><td data-label="Data">Motion sensors (gyroscope, accelerometer)</td><td data-label="Why">Level indicator, horizon lock and the optional gyro log for stabilisation in an editor.</td><td data-label="Where it goes">Kept in the sidecar file you chose to create, next to your video.</td></tr>
+<tr><td data-label="Data">Your photos, videos and audio</td><td data-label="Why">The files you capture: DCIM/NanoOptic, Movies/NanoOptic, Music/NanoOptic and Documents/NanoOptic (optional gyro, frame and signature files).</td><td data-label="Where it goes">Stay on the phone. Shared only when you share them; sharing a photo can strip its location.</td></tr>
+<tr><td data-label="Data">Settings and gallery notes</td><td data-label="Why">So the app remembers how you set it up.</td><td data-label="Where it goes">Stored on the phone. They can be included in Android's backup for your Google account, like most apps' settings. They hold no photos or personal details.</td></tr>
+</tbody>
+</table>
+
+<h2>Portrait mode and Google ML Kit</h2>
+<p>Portrait mode uses Google's ML Kit library to find the person in the picture. The model is inside the app and the picture is processed on your phone. It is not sent to Google. ML Kit itself may send Google technical usage and performance data about the library (such as your phone model, Android version, the app's name and version, and timings) to improve it. Google describes this at <a href="https://developers.google.com/ml-kit/android-data-disclosure">developers.google.com/ml-kit/android-data-disclosure</a>. NanoOptic does not add anything to that data.</p>
+
+<h2>Network use</h2>
+<p>NanoOptic works without a connection. The only network feature is the optional web remote: a page you can open from another device on your own Wi-Fi to see the viewfinder and control the camera. It is off by default, needs a PIN that changes each time it starts, and is encrypted (HTTPS with a self-signed certificate) unless you turn encryption off. Nobody outside your network can reach it.</p>
+
+<h2>Crash information</h2>
+<p>If the app crashes, the details are saved on the phone only. They leave it only if you export the device report and send it yourself.</p>
+
+<h2>Signed captures</h2>
+<p>If you turn on "Sign captures", NanoOptic signs each file with a key that lives in your phone's secure hardware and writes a small record next to the file. The key never leaves the phone. The record lets someone with the file check that it has not changed since it was captured.</p>
+
+<h2>Children</h2>
+<p>NanoOptic is not directed at children and does not knowingly collect their data.</p>
+
+<h2>Your choices</h2>
+<ul>
+<li>Switch off location, the web remote or signed captures in the app's settings at any time.</li>
+<li>Deny or remove the camera, microphone or location permission in Android settings.</li>
+<li>Delete your photos and videos like any other files. Uninstalling the app removes its settings.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version and its date will be published at the same address as this one.</p>
+
+<h2>Contact</h2>
+<p>NanoNexus: <a href="mailto:nanonexuslabs@gmail.com">nanonexuslabs@gmail.com</a></p>
+</main>
+</body>
+</html>
