@@ -22,7 +22,7 @@
 <body>
 <main>
 <h1>NanoOptic privacy policy</h1>
-<p class="meta">Last updated: 21 November 2026</p>
+<p class="meta">Last updated: 23 November 2026</p>
 
 <p>NanoOptic is a camera app. It has no account, no ads and no servers of its own, and it does not sell or share your data. Your photos, videos and audio are saved on your phone and go nowhere unless you share them.</p>
 
@@ -33,16 +33,20 @@
 <tr><td data-label="Data">Camera and microphone</td><td data-label="Why">To take photos and record video and sound.</td><td data-label="Where it goes">Saved on your phone only. While a recording runs, a notification stays visible until it stops.</td></tr>
 <tr><td data-label="Data">Location (optional)</td><td data-label="Why">Only when "Geotag" or "Sky overlay" is on: to write the position into your own files and to work out where the sun and moon are. Asked for when you switch it on.</td><td data-label="Where it goes">Written into your own photo and video files; used on the phone. Never sent anywhere by NanoOptic.</td></tr>
 <tr><td data-label="Data">Motion sensors (gyroscope, accelerometer)</td><td data-label="Why">Level indicator, horizon lock and the optional gyro log for stabilisation in an editor.</td><td data-label="Where it goes">Kept in the sidecar file you chose to create, next to your video.</td></tr>
-<tr><td data-label="Data">Your photos, videos and audio</td><td data-label="Why">The files you capture: DCIM/NanoOptic, Movies/NanoOptic, Music/NanoOptic and Documents/NanoOptic (optional gyro, frame and signature files).</td><td data-label="Where it goes">Stay on the phone. Shared only when you share them; sharing a photo can strip its location.</td></tr>
-<tr><td data-label="Data">Settings and gallery notes</td><td data-label="Why">So the app remembers how you set it up.</td><td data-label="Where it goes">Stored on the phone. They can be included in Android's backup for your Google account, like most apps' settings. They hold no photos or personal details.</td></tr>
+<tr><td data-label="Data">Your photos, videos and audio</td><td data-label="Why">The files you capture: DCIM/NanoOptic, Movies/NanoOptic, Music/NanoOptic and Documents/NanoOptic. Documents/NanoOptic also holds small files the app writes next to your clips: gyro, frame and signature files, and notes about each clip (camera settings, lens, filter, picture curve, scene and take, and a clock-sync group number when you use several phones), plus any editing or report files you export.</td><td data-label="Where it goes">Stay on the phone. Shared only when you share them; sharing a photo can strip its location, and the app tells you if it could not remove it from a file.</td></tr>
+<tr><td data-label="Data">Settings, ratings, tags and notes</td><td data-label="Why">So the app remembers how you set it up and what you marked in the gallery.</td><td data-label="Where it goes">Stored on the phone. They can be included in Android's backup for your Google account, like most apps' settings. That includes the free-text notes you type in the gallery, so do not write anything private there. They hold no photos.</td></tr>
+<tr><td data-label="Data">Device report (optional)</td><td data-label="Why">If you open "Camera capabilities" and share it: the phone maker and model, Android version, processor name, app version and what each camera supports.</td><td data-label="Where it goes">Created only when you ask for it, and sent only where you share it. NanoOptic never sends it.</td></tr>
 </tbody>
 </table>
 
 <h2>Portrait mode and Google ML Kit</h2>
 <p>Portrait mode uses Google's ML Kit library to find the person in the picture. The model is inside the app and the picture is processed on your phone. It is not sent to Google. ML Kit itself may send Google technical usage and performance data about the library (such as your phone model, Android version, the app's name and version, and timings) to improve it. Google describes this at <a href="https://developers.google.com/ml-kit/android-data-disclosure">developers.google.com/ml-kit/android-data-disclosure</a>. NanoOptic does not add anything to that data.</p>
 
+<h2>Voice commands and teleprompter</h2>
+<p>Voice commands and the teleprompter's "follow my voice" are off by default. When you turn one on, NanoOptic uses the speech recognition service built into Android. NanoOptic asks it to work on the phone when it can, but depending on your phone the service (usually Google's) may send the audio to its provider to turn it into text. NanoOptic does not record, store or send that audio itself, and the provider's own terms apply to it. "Follow my voice" is switched off while a video is recording.</p>
+
 <h2>Network use</h2>
-<p>NanoOptic works without a connection. The only network feature is the optional web remote: a page you can open from another device on your own Wi-Fi to see the viewfinder and control the camera. It is off by default, needs a PIN that changes each time it starts, and is encrypted (HTTPS with a self-signed certificate) unless you turn encryption off. Nobody outside your network can reach it.</p>
+<p>NanoOptic works without a connection. The only network feature is the optional web remote: a page you can open from another device on your own Wi-Fi to see the viewfinder and control the camera, including starting and stopping a recording and comparing clocks when you use several phones together. It is off by default, needs a PIN that changes each time it starts, and is encrypted (HTTPS with a self-signed certificate) unless you turn encryption off. After repeated wrong PINs from one device the phone refuses that device for a while. Nobody outside your network can reach it.</p>
 
 <h2>Crash information</h2>
 <p>If the app crashes, the details are saved on the phone only. They leave it only if you export the device report and send it yourself.</p>
